@@ -2,15 +2,66 @@
 <html>
 <head>
     <title>Secret</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        .box {
+            text-align: center;
+            padding: 50px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        input {
+            font-size: 25px;
+            padding: 15px;
+            width: 350px;
+            border-radius: 10px;
+            border: 2px solid #555;
+        }
+
+        button {
+            margin-top: 20px;
+            font-size: 25px;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #message {
+            font-size: 22px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h2>Enter mo ang password baby </h2>
+    <div class="box">
+        <h1>🔐 Enter Password</h1>
 
-    <input type="password" id="password" placeholder="Password">
-    <button onclick="checkPassword()">Enter</button>
+        <input type="password" id="password" placeholder="Enter password">
 
-    <p id="message"></p>
+        <br>
+
+        <button onclick="checkPassword()">ENTER</button>
+
+        <p id="message"></p>
+    </div>
 
     <script>
         function checkPassword() {
@@ -20,7 +71,8 @@
                 window.location.href =
                     "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
             } else {
-                document.getElementById("message").textContent = "Mali password mo baby!";
+                document.getElementById("message").textContent =
+                    " Mali password baby!";
             }
         }
     </script>
