@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secret</title>
+</head>
+<body>
+
+    <h2>Enter mo ang password baby </h2>
+
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="checkPassword()">Enter</button>
+
+    <p id="message"></p>
+
+    <script>
+        function checkPassword() {
+            let password = document.getElementById("password").value;
+
+            if (password === "pogijhunrey") {
+                window.location.href =
+                    "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+            } else {
+                document.getElementById("message").textContent = "Mali password mo baby!";
+            }
+        }
+    </script>
+
+</body>
+</html>
